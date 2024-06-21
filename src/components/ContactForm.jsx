@@ -45,7 +45,9 @@ const ContactForm = ({dispatch}) => {
             </div>
         </div>
         <div className="row">
-            <button onClick={handleAdd} className="btn btn-primary">Add contact</button>
+            <div className="col-12 d-flex justify-content-end">
+                <button onClick={handleAdd} className="btn btn-success">Add contact</button>
+            </div>
         </div>
     </div>
   )

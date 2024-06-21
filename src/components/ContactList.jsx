@@ -18,8 +18,9 @@ const ContactList = () => {
 
     return (
         <div className="container my-5">
-            <button className='btn btn-primary' onClick={() => setDisplayForm(!displayForm)}>
-                Add Contact
+            <button className='btn btn-primary mb-2' onClick={() => setDisplayForm(!displayForm)}>
+                <i className={!displayForm ? 'bi bi-plus-circle-fill me-2' : 'bi bi-x-circle-fill me-2' }></i>
+                {!displayForm ? 'Add new contact' : 'Close'}
             </button>
             {
                 displayForm && <ContactForm dispatch={dispatch} />
